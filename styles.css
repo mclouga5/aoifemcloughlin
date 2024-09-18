@@ -69,9 +69,25 @@ a {
 
 .cover-text h1 {
     font-size: 3vw;
-
     text-align: left;
     color: black;
+}
+
+.badge {
+    height: 55vh;
+    width: 55vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5vw;
+    background: black;
+    color: #FFFAF0;
+}
+.badge h1 {
+    color: #8b9d65;
 }
 
 .container {
@@ -88,6 +104,20 @@ a {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+}
+
+.split1 .badge {
+    position: absolute;
+    bottom: -25vw;
+    left: 1vh;
+    animation-name: float-in-right;
+}
+
+.split2 .badge {
+    position: absolute;
+    top: -25vw;
+    right: 1vh;
+    animation-name: float-in-right;
 }
 
 .text {
@@ -259,6 +289,22 @@ a {
     }
     .spotlight-container {
         bottom: 1%;
+    }
+    .badge {
+        height: 65vw;
+        width: 65vw;
+        font-size: 2.3vw;
+    }
+    .badge h1 {
+        font-size: 3.5vw;
+    }
+    .split1 .badge {
+        top: 6vh;
+        left: 6%;
+    }
+    .split2 .badge {
+        top: 6vh;
+        left: 6%;
     }
 }
 
